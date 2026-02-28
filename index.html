@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RailLink - Головна</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- GFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-wrap site-header-inner">
+            <a href="index.html" class="site-logo">
+                <span class="rl-green">Rail</span><span class="rl-blue">Link</span>
+            </a>
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link nav-link-active">Головна</a>
+                <a href="fleet.html" class="nav-link">Флот</a>
+                <a href="cars.html" class="nav-link">Вагони</a>
+                <a href="routes.html" class="nav-link">Напрямки</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-1">
+        <section class="bg-gradient-to-b from-(--yellow-hover) to-(--yellow)">
+            <div class="site-wrap hero-grid">
+                <div>
+                    <p class="eyebrow text-(--rl-green) mb-3">Міжміські та регіональні перевезення</p>
+                    <h1 class="text-2xl text-(--rl-blue) md:text-4xl font-bold leading-tight mb-5 fancy-heading">
+                        Сучасні подорожі залізницею по Україні та закордон з RailLink</h1>
+                    <p class="text-slate-50 mb-7">Щоденні рейси, оновлений рухомий склад та зручні пересадки між
+                        ключовими містами. Ми будуємо простий і надійний сервіс для комфортної поїздки.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="routes.html" class="btn btn-primary">Переглянути
+                            напрямки</a>
+                        <a href="fleet.html" class="btn btn-outline-light">Дивитись
+                            флот</a>
+                    </div>
+                </div>
+                <div class="bg-slate-800 h-96 rounded-xl p-5 hidden md:block lg:block">
+                    <img src="media/f87d1a15-f256-42bf-aa42-98ec58fc8841.png" alt="Поїзд RailLink"
+                        class="w-full h-full object-cover rounded-lg" />
+                </div>
+            </div>
+        </section>
+        <section class="bg-white border-y border-slate-200">
+            <div class="site-wrap section-py-lg">
+                <div class="search-panel">
+                    <form class="search-form" action="#" method="get">
+                        <div class="search-field">
+                            <label for="from">Звідки</label>
+                            <input id="from" name="from" type="text" autocomplete="off" />
+                        </div>
+                        <div class="search-field">
+                            <label for="to">Куди</label>
+                            <input id="to" name="to" type="text" autocomplete="off" />
+                        </div>
+                        <div class="search-field">
+                            <label for="depart">Відправлення</label>
+                            <input id="depart" name="depart" type="date" />
+                        </div>
+                        <div class="search-field">
+                            <label for="return">Повернення</label>
+                            <input id="return" name="return" type="date" />
+                        </div>
+                        <div class="search-field">
+                            <label for="passengers">Пасажири</label>
+                            <select id="passengers" name="passengers">
+                                <option value="1">1 пасажир</option>
+                                <option value="2">2 пасажири</option>
+                                <option value="3">3 пасажири</option>
+                                <option value="4">4 пасажири</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="search-button">Шукати</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="site-wrap section-py-lg">
+            <h2 class="section-title mb-8">Чому RailLink?</h2>
+            <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                <article class="card card-hover">
+                    <h3>Пунктуальність</h3>
+                    <p>Оптимізовані графіки та контроль руху на головних напрямках.</p>
+                </article>
+                <article class="card card-hover">
+                    <h3>Комфорт</h3>
+                    <p>Клімат-контроль, Wi-Fi у швидкісних рейсах та чисті вагони.</p>
+                </article>
+                <article class="card card-hover">
+                    <h3>Безпека</h3>
+                    <p>Регулярне технічне обслуговування та підготовка персоналу.</p>
+                </article>
+                <article class="card card-hover">
+                    <h3>Покриття</h3>
+                    <p>Рейси між великими містами та регіональними центрами.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-white border-y border-slate-200">
+            <div class="site-wrap section-py-lg">
+                <h2 class="section-title mb-8">Популярні напрямки</h2>
+                <div class="grid gap-6 md:grid-cols-3">
+                    <article class="card-soft card-hover">
+                        <img src="https://placehold.co/560x280/334155/f8fafc?text=Київ+—+Львів" alt="Київ Львів" />
+                        <h3>Київ — Львів</h3>
+                        <p>6–7 рейсів щодня, денні та вечірні відправлення.</p>
+                    </article>
+                    <article class="card-soft card-hover">
+                        <img src="https://placehold.co/560x280/0f172a/facc15?text=Київ+—+Одеса" alt="Київ Одеса" />
+                        <h3>Київ — Одеса</h3>
+                        <p>Швидкісні та нічні варіанти для поїздок цілий рік.</p>
+                    </article>
+                    <article class="card-soft card-hover">
+                        <img src="https://placehold.co/560x280/1d4ed8/f8fafc?text=Дніпро+—+Харків"
+                            alt="Дніпро Харків" />
+                        <h3>Дніпро — Харків</h3>
+                        <p>Комфортні регіональні сполучення для ділових поїздок.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="site-wrap section-py-md ">
+            <h2 class="section-title mb-4">RailLink — сучасні залізничні перевезення для щоденних і далеких поїздок</h2>
+            <p>RailLink обʼєднує міжміські, регіональні та нічні маршрути в єдину систему, де пасажири можуть швидко
+                знайти оптимальний рейс за часом і рівнем комфорту. На головній сторінці зібрано ключову інформацію про
+                напрямки, типи вагонів та базові переваги сервісу, що спрощує вибір подорожі для роботи, відпочинку або
+                навчання. Ми фокусуємось на стабільному розкладі, зрозумілій навігації та доступності інформації.</p>
+            <p>Для користувачів важливо отримувати актуальні дані про рейси, умови поїздки та можливості пересадок, тому
+                платформа RailLink регулярно оновлює інформацію за основними маршрутами. Розвиток флоту, модернізація
+                вагонів і підвищення якості обслуговування допомагають формувати комфортний досвід поїздок залізницею в
+                Україні та на міжнародних сполученнях. Саме це робить RailLink зручним вибором для планування подорожей
+                у будь-який сезон.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-wrap site-footer-inner">
+            <p class="text-sm">© 2026 RailLink. </p>
+            <div class="site-footer-links">
+                <a href="fleet.html" class="footer-link">Флот</a>
+                <a href="cars.html" class="footer-link">Вагони</a>
+                <a href="routes.html" class="footer-link">Напрямки</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

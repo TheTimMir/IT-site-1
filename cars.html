@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RailLink - Вагони</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- GFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-wrap site-header-inner">
+            <a href="index.html" class="site-logo">
+                <span class="rl-green">Rail</span><span class="rl-blue">Link</span>
+            </a>
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link">Головна</a>
+                <a href="fleet.html" class="nav-link">Флот</a>
+                <a href="cars.html" class="nav-link nav-link-active">Вагони</a>
+                <a href="routes.html" class="nav-link">Напрямки</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-dark">
+            <div class="site-wrap hero-compact">
+                <p class="eyebrow mb-2">Комфорт на борту</p>
+                <h1 class="text-3xl md:text-4xl font-bold mb-4 fancy-heading">Типи вагонів RailLink</h1>
+                <p class="text-slate-300 max-w-3xl">Для різних форматів подорожі: денні швидкісні рейси, нічні переїзди
+                    та бюджетні поїздки на великі відстані.</p>
+            </div>
+        </section>
+
+        <section class="site-wrap section-py-md grid gap-6 md:grid-cols-2">
+            <a href="car-seat-2.html" class="card card-hover car-card">
+                <img src="media/Ruzovka_aced8abe87.jpg" alt="Сидячий вагон 2 клас" />
+                <h2 class="car-type-heading"><span class="material-icons car-type-icon"
+                        aria-hidden="true">airline_seat_recline_normal</span>Сидячий 2 клас</h2>
+                <p>Практичний вибір для денних маршрутів до 6 годин.</p>
+                <ul>
+                    <li>М’які ергономічні крісла</li>
+                    <li>Розетки 220V та USB-порти</li>
+                    <li>Багажні полиці над місцями</li>
+                    <li>Електронне табло по маршруту</li>
+                </ul>
+                <span class="car-type-link">Детальніше</span>
+            </a>
+
+            <a href="car-seat-1.html" class="card card-hover car-card">
+                <img src="media/RegioJet-Relax-Class-2.jpg" alt="Сидячий вагон 1 клас" />
+                <h2 class="car-type-heading"><span class="material-icons car-type-icon"
+                        aria-hidden="true">airline_seat_recline_extra</span>Сидячий 1 клас</h2>
+                <p>Підвищений рівень комфорту для ділових поїздок.</p>
+                <ul>
+                    <li>Більша відстань між кріслами</li>
+                    <li>Індивідуальне освітлення</li>
+                    <li>Тихий вагон без гучних дзвінків</li>
+                    <li>Безкоштовна вода та преса</li>
+                </ul>
+                <span class="car-type-link">Детальніше</span>
+            </a>
+
+            <a href="car-coupe.html" class="card card-hover car-card">
+                <img src="media/04_B_Dve_luzka_copy_e8626efe4b.webp" alt="Вагон купе" />
+                <h2 class="car-type-heading"><span class="material-icons car-type-icon"
+                        aria-hidden="true">meeting_room</span>Купе</h2>
+                <p>Класичний формат нічної подорожі для 4 пасажирів.</p>
+                <ul>
+                    <li>Закриті купе з дверима</li>
+                    <li>Комплект постільної білизни</li>
+                    <li>Місце для ручного багажу</li>
+                    <li>Доступ до питної води у вагоні</li>
+                </ul>
+                <span class="car-type-link">Детальніше</span>
+            </a>
+
+            <a href="car-sv.html" class="card card-hover car-card">
+                <img src="media/nightjet58-1200x675.jpg" alt="Вагон СВ" />
+                <h2 class="car-type-heading"><span class="material-icons car-type-icon"
+                        aria-hidden="true">hotel</span>СВ</h2>
+                <p>Найкомфортніший варіант нічного рейсу у форматі 2-місного купе.</p>
+                <ul>
+                    <li>Підвищена приватність</li>
+                    <li>М’які матраци та збільшені полиці</li>
+                    <li>Розетка біля кожного місця</li>
+                    <li>Пакет дорожнього сервісу</li>
+                </ul>
+                <span class="car-type-link">Детальніше</span>
+            </a>
+        </section>
+
+        <section class="site-wrap section-pb-lg">
+            <div class="card p-6 md:p-8">
+                <h2 class="section-title mb-4">Базові зручності у більшості рейсів</h2>
+                <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 text-sm text-slate-700">
+                    <div class="bg-slate-50 rounded-lg p-4">Клімат-контроль у вагонах нового зразка</div>
+                    <div class="bg-slate-50 rounded-lg p-4">Полиці для великого багажу та рюкзаків</div>
+                    <div class="bg-slate-50 rounded-lg p-4">Системи відеоспостереження у коридорах</div>
+                    <div class="bg-slate-50 rounded-lg p-4">Місця для пасажирів з обмеженою мобільністю</div>
+                    <div class="bg-slate-50 rounded-lg p-4">Оновлені санвузли у нових складах</div>
+                    <div class="bg-slate-50 rounded-lg p-4">Інформаційні оголошення українською та англійською</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="site-wrap section-pb-lg ">
+            <h2 class="section-title mb-4">Вагони RailLink: вибір класу для будь-якої подорожі</h2>
+            <p>RailLink пропонує кілька форматів вагонів, щоб пасажири могли обрати оптимальний баланс вартості,
+                комфорту та тривалості поїздки. На сторінці представлено основні типи вагонів для денних і нічних
+                маршрутів, а також короткий огляд сервісів, що доступні у кожному класі. Це допомагає швидко порівняти
+                варіанти перед бронюванням квитків на популярні напрямки по Україні.</p>
+            <p>Опис кожного типу вагона включає практичну інформацію про посадку, зручності на борту, простір для багажу
+                та цільову аудиторію поїздки. Завдяки цьому пасажири можуть заздалегідь визначити, який формат краще
+                підходить для ділових, туристичних або сімейних подорожей. Такий підхід спрощує планування маршруту та
+                покращує загальний досвід подорожі залізницею.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-wrap site-footer-inner">
+            <p class="text-sm">© 2026 RailLink. </p>
+            <div class="site-footer-links">
+                <a href="fleet.html" class="footer-link">Флот</a>
+                <a href="cars.html" class="footer-link">Вагони</a>
+                <a href="routes.html" class="footer-link">Напрямки</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
